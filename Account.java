@@ -28,3 +28,9 @@ public class Account{
 public int getBalance() {
     return balance;
 }
+  public byte[] sign(PrivateKey key, byte[] msg) throws Exception {
+	key = voteWallet.getPrivate();
+	byte[] val = Signatures.GenerateSignature(msg,key);
+	return val;
+}
+}
