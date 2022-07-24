@@ -16,7 +16,7 @@ public class Transaction{
         nonce++;
 		 operations.add(operation);
 		 Transaction transaction =new Transaction();
-		 ID= Hash.hash_sha256( Integer.toString(nonce) + operation );
+		 ID= Hash.hash_sha256( Integer.toString(nonce) + operation.pubkey.toString()+operation.candPubkey.toString()+ Integer.toString(operation.vote) );
 			return transaction;
 		}
 		 
