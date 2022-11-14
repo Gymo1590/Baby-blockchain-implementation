@@ -5,8 +5,8 @@ import java.security.Security;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import com.google.gson.*;
-public class babyBlockChain {
+// import com.google.gson.*;
+public class BlockChain {
     
 
    public static  ArrayList<Block> block = new ArrayList<Block>();
@@ -66,20 +66,20 @@ genesisBlock.hashOfBlock = genesisBlock.hashOfBlock;
 }
 
 
-// public static void main(String[] args) {
+public static void main(String[] args) {
  
-//   Block b0= initBlock();
-//   block.add(0, b0);
+  Block b0= initBlock();
+  block.add(0, b0);
 
-//   Block block1 = new Block(b0.hashOfBlock);
+  Block block1 = new Block(b0.hashOfBlock);
  
-//   block.add(1, block1);
+  block.add(1, block1);
   
-//   System.out.println(block.get(0).prevHash);
-//   System.out.println( block.get(0).hashOfBlock);
-//   System.out.println(block.get(1).prevHash ); System.out.println(block.get(1).hashOfBlock );
+  System.out.println(block.get(0).prevHash);
+  System.out.println( block.get(0).hashOfBlock);
+  System.out.println(block.get(1).prevHash ); System.out.println(block.get(1).hashOfBlock );
   
    
-// }
+}
 
 }
